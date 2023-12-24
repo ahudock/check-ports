@@ -5,8 +5,8 @@
 
 # Default values
 host="localhost"
-start_port="3306"
-end_port="3306"
+start_port="22"
+end_port="22"
 
 # Parse command-line options
 while getopts ":h:p:" opt; do
