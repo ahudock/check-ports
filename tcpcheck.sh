@@ -1,7 +1,7 @@
 #!/bin/bash
-# Checks for open ports based on tcp exit codes
+# Checks for open ports based using tcp exit codes
 # @author: Andy Hudock <ahudock@pm.me>
-# Usage: ./check_ports.sh -h <host> -p <starting port>[-<ending port>]
+# Usage: ./tcpcheck.sh -h <host> -p <starting port>[-<ending port>]
 
 # Default values
 host="localhost"
