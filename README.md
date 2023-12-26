@@ -1,6 +1,6 @@
 # TCP Check
 
-Checks for open TCP ports based on the exit code returned by the tcp command.
+Checks for open TCP ports using tcp exit codes.
 
 Usage:
     tcpcheck.sh [-h <hostname>] [-p <port>|<start_port>-<end_port>]
