@@ -1,6 +1,6 @@
 # TCP Check
 
-Checks for open TCP ports using tcp exit codes.
+Checks for open TCP ports using tcp exit codes. This method isn't particularly elegant or efficient, but it can be helpful when your other network mapping tool is being blocked or filtered by a firewall.
 
 Usage:
 
