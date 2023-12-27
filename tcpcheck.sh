@@ -1,15 +1,34 @@
 #!/bin/bash
-# Checks for open ports using tcp exit codes
+#
+# TCP Check
+#
+# Checks for open TCP ports using tcp exit codes. This method isn't particularly elegant or efficient,
+# but it can be helpful when your other network mapping tool is blocked/filtered by a firewall.
+#
 # @author: Andy Hudock <ahudock@pm.me>
 #
 # Usage:
 #   tcpcheck.sh [-h <hostname>] [-p <port>|<start_port>-<end_port>]
 #
 # Options:
-#   -h <host>   The target hostname or IP address (default: localnost)
+#   -h <host>   The target hostname or IP address (default: localhost)
 #
 #   -p <port>|<start_port>-<end_port>
-#               The port or port range to scan (default: 22).
+#               The port or port range to scan (default: 22). The port range is scanned
+#               sequentially from <start_port> to <end_port>
+#
+# TODO:
+#   [ ] Add option for writing to log file
+#   [ ] Randomize port range scan by default; optionally sequential
+#   [ ] Scan top 1000 ports by default
+#   [ ] Scan top 1000 ports first if range
+#   [ ] Support multiple port ranges
+#   [ ] Add timeout option
+#   [ ] Add verbose mode to echo tcp command exit codes
+#   [ ] Add options to display only open or closed ports
+#   [ ] Display config. settings at beginning of scan
+#   [ ] Display summary upon completion of scan
+#
 
 # Default values
 host="localhost"
