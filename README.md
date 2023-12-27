@@ -9,8 +9,8 @@ Usage:
 
 Options:
 
-    -h <host>   The target hostname or IP address (default: localhost).
+    -h <host>   The target hostname or IP address (default: localhost)
 
     -p <port>|<start_port>-<end_port>
                 The port or port range to scan (default: 22). The port range is scanned
-                sequentially from <start_port> to <end_port> (not yet optimized or randomized).
+                sequentially from <start_port> to <end_port>
