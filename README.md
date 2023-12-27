@@ -13,4 +13,4 @@ Options:
 
     -p <port>|<start_port>-<end_port>
                 The port or port range to scan (default: 22). The port range is scanned
-                sequentially from <start_port> to <end_port>
+                sequentially from <start_port> to <end_port> with a one second timeout
