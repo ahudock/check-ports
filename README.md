@@ -4,7 +4,7 @@ Checks for open TCP ports using tcp exit codes.
 
 Usage:
 
-    tcpcheck.sh [-h <hostname>] [-p <port>|<start_port>-<end_port>]
+    tcpcheck.sh [-h <hostname>] [-p <port range>]
 
 Options:
 
